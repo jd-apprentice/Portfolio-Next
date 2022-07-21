@@ -1,0 +1,8 @@
+{
+    "locales": ["en", "es"],
+    "defaultLocale": "en",
+    "pages": {
+      "*": ["_app"],
+      "/": ["_app", "index"]
+    }
+}
