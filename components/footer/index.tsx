@@ -1,5 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
+import { config } from "../../config/index";
 
 const Footer = () => {
     const { t } = useTranslation('index')
@@ -11,7 +12,7 @@ const Footer = () => {
                     <p>{t("footer")}</p>
                     <div className="flex flex-wrap pt-2 sm:space-x-4 space-x-2 font-medium lg:pt-0">
                         <a
-                            href="https://twitter.com/jd_apprentice"
+                            href={config.socials.twitter}
                             className={"transition-colors hover:text-yellow-500"}
                             target="_blank"
                             rel="noreferrer"
@@ -19,7 +20,7 @@ const Footer = () => {
                             Twitter
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/jonathandyallo/"
+                            href={config.socials.linkedin}
                             className={"transition-colors hover:text-yellow-500"}
                             target="_blank"
                             rel="noreferrer"
@@ -27,7 +28,7 @@ const Footer = () => {
                             LinkedIn
                         </a>
                         <a
-                            href="https://github.com/jd-apprentice"
+                            href={config.socials.github}
                             className={"transition-colors hover:text-yellow-500"}
                             target="_blank"
                             rel="noreferrer"
@@ -35,7 +36,7 @@ const Footer = () => {
                             GitHub
                         </a>
                         <a
-                            href="https://www.codewars.com/users/jd_apprentice"
+                            href={config.socials.codewars}
                             className={"transition-colors hover:text-yellow-500"}
                             target="_blank"
                             rel="noreferrer"
@@ -43,7 +44,7 @@ const Footer = () => {
                             Codewars
                         </a>
                         <a
-                            href="https://platzi.com/p/jd.apprentice/"
+                            href={config.socials.platzi}
                             className={"transition-colors hover:text-yellow-500"}
                             target="_blank"
                             rel="noreferrer"
@@ -51,7 +52,7 @@ const Footer = () => {
                             Platzi
                         </a>
                         <a
-                            href="https://steamcommunity.com/id/piolaso"
+                            href={config.socials.steam}
                             className={"transition-colors hover:text-yellow-500"}
                             target="_blank"
                             rel="noreferrer"

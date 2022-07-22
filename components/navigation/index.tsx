@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Language, Theme } from "..";
+import { Language, Music, Theme } from "..";
 
 const Navigation = () => {
   return (
@@ -16,6 +16,7 @@ const Navigation = () => {
           </a>
         </Link>
         <Theme />
+        <Music />
         <Language />
       </div>
     </div>
