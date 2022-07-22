@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import profile from "../../public/profile.jpeg";
 import useTranslation from 'next-translate/useTranslation'
 
 const About = () => {
@@ -31,13 +30,12 @@ const About = () => {
         </div>
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
           <Image
-            src={profile}
+            src={"https://avatars.githubusercontent.com/u/68082746?v=4"}
             alt="Profile"
             priority={true}
             className="rounded-full"
             width={250}
             height={250}
-            placeholder="blur"
           />
         </div>
       </div>
