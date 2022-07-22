@@ -31,7 +31,7 @@ const PlayMusic = () => {
         <ReactPlayer
           style={{ display: "none" }}
           playing={play}
-          volume={0.1}
+          volume={0.2}
           width={0}
           height={0}
           url={config.youtube.url}
