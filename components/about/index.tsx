@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import useTranslation from 'next-translate/useTranslation'
+import useTranslation from "next-translate/useTranslation";
+import { config } from "../../config/index";
 
 const About = () => {
-  const { t } = useTranslation('index')
+  const { t } = useTranslation("index");
   return (
     <div className="container px-4 mx-auto">
       <div className="lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
@@ -17,20 +18,20 @@ const About = () => {
           <div className="flex items-center justify-center md:justify-center lg:justify-start xsm:justify-center sm:justify-center space-x-2 mt-2">
             <button
               type="button"
-              className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              className="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out dark:bg-blue-600 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:focus:bg-blue-700"
             >
-              <a href={t("resume-link")} target={"_blank"}>{t("resume")}</a>
+              <a href={t("resume-link")} target={"_blank"}>
+                {t("resume")}
+              </a>
             </button>
           </div>
           <div className="mt-6 text-gray-800 dark:text-white">
-            <p className="mb-4">
-              {t("about-me")}
-            </p>
+            <p className="mb-4">{t("about-me")}</p>
           </div>
         </div>
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
           <Image
-            src={"https://avatars.githubusercontent.com/u/68082746?v=4"}
+            src={config.github.url}
             alt="Profile"
             priority={true}
             className="rounded-full"
