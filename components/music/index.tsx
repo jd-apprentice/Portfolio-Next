@@ -36,6 +36,11 @@ const PlayMusic = () => {
           height={0}
           url={config.youtube.url}
           onEnded={() => setPlay(false)}
+          config={{
+            file: {
+              forceAudio: true
+            }
+          }}
         />
       )}
     </>
