@@ -3,6 +3,7 @@
     "defaultLocale": "en",
     "pages": {
       "*": ["_app"],
-      "/": ["_app", "index"]
+      "/": ["_app", "index"],
+      "/skills": ["index"]
     }
 }
