@@ -3,5 +3,10 @@
   "about-me": "De La Plata, Argentina. En el rubro del desarrollo e finanzas, construyendo dia a dia cosas utiles e interesantes sea por diversion y profesionalmente. Actualmente me encuentro trabajando como desarollador Fullstack con react + node, como tambien tutor en Argentina Programa. Fanatico de la blockchain, finanzas, ajedrez y anime. 🎮📈♟️",
   "resume": "Descargar CV",
   "footer": "Construido con Next.js, Tailwind y Vercel",
-  "resume-link": "https://drive.google.com/file/d/1MXOJ1HizevNPAorP2Wn5mfMFt6vh0jgs/view?usp=sharing"
+  "resume-link": "https://drive.google.com/file/d/1MXOJ1HizevNPAorP2Wn5mfMFt6vh0jgs/view?usp=sharing",
+  "languages": "Lenguajes",
+  "other": "Utilidades",
+  "cloud": "Servicios cloud",
+  "skills": "Conocimientos y experiencia en: ",
+  "button_skills": "Habilidades"
 }
