@@ -19,8 +19,15 @@ import {
   SiLinux,
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
+import { ReactElement } from "react";
 
-const Skills = () => {
+/**
+ * @ToDo Map the skills
+ * @description Skills section
+ * @returns { ReactElement } A preview of the skills section
+ */
+
+const Skills: React.FC = (): ReactElement => {
   const { t } = useTranslation("index");
   return (
     <>

@@ -1,9 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { ReactElement } from 'react'
 import { About } from '../components'
 import { config } from "../config/index"
 
-const Home: NextPage = () => {
+const Home: NextPage = (): ReactElement => {
   return (
     <div className="space-y-14 lg:space-y-24">
       <Head>

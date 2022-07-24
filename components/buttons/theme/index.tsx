@@ -1,8 +1,13 @@
-import { useEffect, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import React from "react";
 
-const ThemeSwitch = () => {
+/**
+ * @description Change to dark theme or white theme
+ * @returns { ReactElement } Theme button which is used to change the current theme
+ */
+
+const ThemeSwitch: React.FC = (): ReactElement => {
   const [mounted, setMounted] = useState<boolean>(false);
   const { theme, setTheme, resolvedTheme } = useTheme();
 
