@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CS
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
   <>
     <ThemeProvider attribute="class" enableSystem={false}>

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import setLanguage from "next-translate/setLanguage";
 import { useRouter } from "next/router";
 
-const ChangeLanguage = () => {
+/**
+ * @description Change the language of the application
+ * @returns { ReactElement } ChangeLanguage component which is used to change the language of the current application
+ */
+
+const ChangeLanguage: React.FC = (): ReactElement => {
   const router = useRouter();
   return (
     <>

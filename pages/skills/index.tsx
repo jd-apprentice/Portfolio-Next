@@ -2,8 +2,9 @@ import { config } from "../../config/index";
 import { NextPage } from "next";
 import Head from "next/head";
 import { Skills } from "../../components";
+import { ReactElement } from "react";
 
-const SkillsSection: NextPage = () => {
+const SkillsSection: NextPage = (): ReactElement => {
   return (
     <div className="space-y-14 lg:space-y-24">
       <Head>
