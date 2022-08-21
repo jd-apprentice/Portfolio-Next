@@ -64,6 +64,14 @@ const Footer: React.FC = (): ReactElement => {
             >
               Steam
             </a>
+            <a
+              href={config.socials.instagram}
+              className={"transition-colors hover:text-yellow-500"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
           </div>
         </div>
       </div>

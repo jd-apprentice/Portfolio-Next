@@ -11,6 +11,7 @@ export var config = {
         github: "https://github.com/jd-apprentice",
         codewars: "https://www.codewars.com/users/jd_apprentice",
         platzi: "https://platzi.com/p/jd.apprentice",
-        steam: "https://steamcommunity.com/id/piolaso"
+        steam: "https://steamcommunity.com/id/piolaso",
+        instagram: "https://www.instagram.com/jd.apprentice"
     }
 }
