@@ -10,7 +10,7 @@ const Home: NextPage = (): ReactElement => {
     <div className="space-y-14 lg:space-y-24">
       <Head>
         <title>Jonathan Dyallo - Fullstack Developer</title>
-        <link rel="shortcut icon" type="image/png" href="/public/favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/jd-apprentice/Portfolio-Next/main/public/favicon.png" />
         <meta property="og:image"
           content={config.github.url} />
         <meta name="description"
