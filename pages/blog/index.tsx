@@ -12,7 +12,7 @@ export default function Blog({ posts }: PostsType) {
   return (
     <div>
       <Head>
-        <title>Jonathan Dyallo - Skills</title>
+        <title>Jonathan Dyallo - Blog</title>
         <link
           rel="shortcut icon"
           type="image/jpg"
