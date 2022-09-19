@@ -6,12 +6,29 @@ import Post from "../../components/post/index";
 import { sortByDate } from "../../utils/index";
 import { Key } from "react";
 import { IPost, PostsType } from "../../models";
+import { config } from "../../config";
 
 export default function Blog({ posts }: PostsType) {
   return (
     <div>
       <Head>
-        <title>Jonathan Dyallo - Blog</title>
+        <title>Jonathan Dyallo - Skills</title>
+        <link
+          rel="shortcut icon"
+          type="image/jpg"
+          href="https://raw.githubusercontent.com/jd-apprentice/Portfolio-Next/main/public/favicon.png"
+        />
+        <meta property="og:image" content={config.github.url} />
+        <meta
+          name="description"
+          content="Blog section - Here I have all the blog posts I had written in the past"
+        ></meta>
+        <meta
+          property="og:description"
+          content="Blog section - Here I have all the blog posts I had written in the past"
+        />
+        <meta property="og:title" content="Jonathan Dyallo - Blog" />
+        <meta property="og:url" content="https://jonathandyallo.vercel.app" />
       </Head>
       <div className="container my-12 mx-auto px-4 md:px-12">
         <div className="flex flex-wrap -mx-1 lg:-mx-4">
