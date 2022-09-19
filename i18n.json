@@ -4,6 +4,8 @@
     "pages": {
       "*": ["_app"],
       "/": ["_app", "index"],
-      "/skills": ["index"]
+      "/skills": ["index"],
+      "/blog": ["index"],
+      "/blog/:slug": ["*.html"]
     }
 }

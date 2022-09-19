@@ -8,5 +8,8 @@
   "other": "Utilidades",
   "cloud": "Servicios cloud",
   "skills": "Conocimientos y experiencia en: ",
-  "button_skills": "Habilidades"
+  "button_skills": "Habilidades",
+  "button_blog": "Blog",
+  "read_more": "Leer mas",
+  "go_back": "Volver atras"
 }
