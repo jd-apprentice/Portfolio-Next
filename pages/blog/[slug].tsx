@@ -62,21 +62,21 @@ export async function getStaticPaths({ locales }: { locales: string[] }) {
         params: {
           slug: filename.replace(".md", ""),
         },
-        locale: locale,
+        locale,
       };
     });
   });
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
 
 export async function getStaticProps({
   params: { slug },
 }: {
-  params: { slug: string; locale: any };
+  params: { slug: string; locale: string };
 }) {
   const markdownWithMeta = fs.readFileSync(
     path.join("posts", slug + ".md"),
