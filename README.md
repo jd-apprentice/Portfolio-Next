@@ -1,4 +1,4 @@
-# 🇳 Portfolio 2022 - Nextjs + Tailwind + Vercel
+# 🇳 Portfolio 2022 - Nextjs + Tailwind + Digital Ocean
 
 ![Nextjs](https://notes.webutvikling.org/static/283331d58b294ab05c1491be3436600e/5d2c5/nextjs.png)
 
@@ -22,9 +22,9 @@ yarn install
 yarn dev
 ```
 
-## 🧱 Stack 
+## 🧱 Stack
 
 - Nextjs
 - Typescript
 - TailwindCSS
-- Vercel
+- Digital Ocean

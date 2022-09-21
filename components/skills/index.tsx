@@ -17,6 +17,10 @@ import {
   SiVercel,
   SiVim,
   SiLinux,
+  SiDigitalocean,
+  SiNginx,
+  SiTrello,
+  SiNotion,
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
 import { ReactElement } from "react";
@@ -45,10 +49,7 @@ const Skills: React.FC = (): ReactElement => {
       </div>
       <h2 className="ml-5 text-2xl">{t("skills")}</h2>
       <div className="grid grid-cols-2 md:grid-cols-4">
-        <Box
-          title={t("languages")}
-          icons={[<SiTypescript />, <SiSolidity />]}
-        />
+        <Box title={t("languages")} icons={[<SiTypescript />]} />
         <Box
           title="Frontend"
           icons={[<SiReact />, <SiNextdotjs />, <SiSass />]}
@@ -61,7 +62,12 @@ const Skills: React.FC = (): ReactElement => {
         />
         <Box
           title={t("cloud")}
-          icons={[<SiHeroku />, <SiVercel />, <SiFirebase />]}
+          icons={[
+            <SiDigitalocean />,
+            <SiHeroku />,
+            <SiVercel />,
+            <SiFirebase />,
+          ]}
         />
       </div>
     </>
