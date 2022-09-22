@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react";
-import { BoxType } from "../../models";
+import { BoxType } from "../../../models";
 
 /**
  * ```jsx
- * // Example component 
+ * // Example component
  * <Box title="Hello world!" icons={sampleIcon} />
  * ```
  * @param { BoxType } props.title - Title of the box
