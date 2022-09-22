@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
-import { config } from "../../config/index";
+import { config } from "../../../config/index";
 import Link from "next/link";
 
 /**
@@ -22,14 +22,14 @@ const About: React.FC = (): ReactElement => {
             {t("job")}
           </h3>
           <div className="flex items-center justify-center md:justify-center lg:justify-start xsm:justify-center sm:justify-center space-x-2 mt-2">
-            <button
-              type="button"
-              className="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out dark:bg-blue-600 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:focus:bg-blue-700"
-            >
-              <a href={t("resume-link")} target={"_blank"}>
+            <a href={t("resume-link")} target={"_blank"}>
+              <button
+                type="button"
+                className="inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out dark:bg-blue-600 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:focus:bg-blue-700"
+              >
                 {t("resume")}
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
           <div className="mt-6 text-gray-800 dark:text-white">
             <p className="mb-4">{t("about-me")}</p>

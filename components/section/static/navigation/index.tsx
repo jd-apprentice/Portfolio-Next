@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { ReactElement } from "react";
-import { Language, Music, Theme } from "../..";
+import { Language, Music, Theme } from "../../..";
 
 /**
  * @description Here goes the theme button, music and home buttons

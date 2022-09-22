@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
-import Post from "../../components/post/index";
+import Post from "../../components/section/post/index";
 import { sortByDate } from "../../utils/index";
 import { Key } from "react";
 import { IPost, PostsType } from "../../models";

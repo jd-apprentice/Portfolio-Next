@@ -1,6 +1,6 @@
 import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
-import { PostType } from "../../models";
+import { PostType } from "../../../models";
 
 export default function Post({ post }: PostType) {
   const { t } = useTranslation("index");
