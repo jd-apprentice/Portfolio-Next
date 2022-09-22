@@ -56,8 +56,8 @@ export default function PostPage({
 
 export async function getStaticPaths({ locales }: { locales: string[] }) {
   const files = fs.readdirSync(path.join("posts"));
-  const paths = files.flatMap((filename) => {
-    return locales.map((locale) => {
+  const paths = files.flatMap((filename: string) => {
+    return locales.map((locale: string) => {
       return {
         params: {
           slug: filename.replace(".md", ""),
