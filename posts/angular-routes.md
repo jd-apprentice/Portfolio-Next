@@ -1,5 +1,5 @@
 ---
-title: "Routing in angular with modules [ES]"
+title: "Routing in angular [ES]"
 excerpt: "[ES] Rutas en angular"
 date: "Feb 10 2022"
 cover_image: "/blog/angular.png"

@@ -1,5 +1,5 @@
 ---
-title: "Dockerize a database + DBeaver [EN]"
+title: "Docker + DBeaver [EN]"
 excerpt: "[EN] Docker a database and use it with DBeaver in your application"
 date: "Aug 21 2022"
 cover_image: "/blog/docker.png"

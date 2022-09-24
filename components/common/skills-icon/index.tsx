@@ -11,7 +11,11 @@ const SkillsIcon: React.FC<IconsType> = ({
   text,
 }: IconsType): React.ReactElement => {
   return (
-    <Tooltip content={text}>
+    <Tooltip
+      placement="bottom"
+      className="text-dark dark:text-white"
+      content={text}
+    >
       <div>{children}</div>
     </Tooltip>
   );
