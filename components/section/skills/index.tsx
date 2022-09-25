@@ -4,13 +4,11 @@ import Box from "../../common/box";
 import {
   SiTypescript,
   SiReact,
-  SiSass,
   SiNextdotjs,
   SiNodedotjs,
   SiExpress,
   SiMongodb,
   SiPostgresql,
-  SiFirebase,
   SiDocker,
   SiHeroku,
   SiVercel,
@@ -18,7 +16,6 @@ import {
   SiLinux,
   SiDigitalocean,
   SiGnubash,
-  SiMaterialdesign,
   SiMaterialui,
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
@@ -26,7 +23,6 @@ import { ReactElement } from "react";
 import { SkillsIcon } from "../..";
 
 /**
- * @ToDo Map the skills
  * @description Skills section
  * @returns { ReactElement } A preview of the skills section
  */
@@ -58,7 +54,7 @@ const Skills: React.FC = (): ReactElement => {
           icons={[
             <SkillsIcon text="React" children={<SiReact />} />,
             <SkillsIcon text="Nextjs" children={<SiNextdotjs />} />,
-            <SkillsIcon text="Matierla UI" children={<SiMaterialui />} />,
+            <SkillsIcon text="Material UI" children={<SiMaterialui />} />,
           ]}
         />
         <Box
