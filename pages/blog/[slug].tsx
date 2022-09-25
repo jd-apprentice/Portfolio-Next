@@ -44,7 +44,7 @@ export default function PostPage({
             <div className="text-xl">Posted on {date}</div>
             <img src={cover_image} alt={alt} />
           </div>
-          <div className="text-base mx-auto mt-3 py-3">
+          <div className="text-base mt-3 py-3 bg-slate-200 dark:bg-gray-800">
             {/* @ts-ignore */}
             <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
           </div>

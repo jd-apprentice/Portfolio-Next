@@ -8,7 +8,7 @@ alt: "Angular"
 
 # Routing en angular con módulos
 
-```jsx
+```javascript
 app - routing.module.ts;
 
 import { NgModule } from "@angular/core";
@@ -41,7 +41,7 @@ export class AppRoutingModule {}
 - En este ejemplo utilizamos los módulos home y clientes que son `views` en angular pantallas apartes de forma mas simple. De esta forma cada una de las sub-rutas dentro de esos módulos siempre va a llevar el path inicial.
 - De esta forma armamos algo asi → `/home` o `/clientes/:id`
 
-```jsx
+```javascript
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./home.component";

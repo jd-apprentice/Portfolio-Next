@@ -54,7 +54,7 @@ const Skills: React.FC = (): ReactElement => {
           icons={[
             <SkillsIcon text="React" children={<SiReact />} />,
             <SkillsIcon text="Nextjs" children={<SiNextdotjs />} />,
-            <SkillsIcon text="Matierla UI" children={<SiMaterialui />} />,
+            <SkillsIcon text="Material UI" children={<SiMaterialui />} />,
           ]}
         />
         <Box

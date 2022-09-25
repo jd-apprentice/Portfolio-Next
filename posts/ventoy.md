@@ -30,10 +30,13 @@ cover_image: "/blog/ventoy.png"
 
 - Encontrandonos dentro de la carpeta de ventoy podemos hacer un `ls -ltr` para asegurarnos que estemos bien posicionamos,
   si vemos el archivado llamado `Ventoy2Disk.sh` significa que estamos en el lugar correcto.
+
 - Aqui tendriamos que poner nuestro comando ya que en mi caso es `sudo sh Ventoy2Disk.sh -I -s /dev/sdc` para esta ultima parte
   hace falta que sepan cual es su usb y lo pueden saber de esta forma
+
 - Hacemos un `sudo fdisk -l` y recibiremos una lista de nuestros discos el cual puede el ultimo generalmente es nuestro USB
-  y ahi mismo tiene el nombre de su particion ->
+  y ahi mismo tiene el nombre de su particion.
+
 - ![image](https://user-images.githubusercontent.com/68082746/184545474-125dfd32-3026-410b-866a-305ad13924ce.png)
   Como pueden ver el mio ahi en la columna de device dice su nombre, para cuando vayamos a utilizar nuestro comando de booteable
   no hace falta poner los numeros ya que esos representan una particion.
