@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
-import { config } from "../../../config/index";
+import { config } from "@/config/index";
 import Link from "next/link";
 
 /**

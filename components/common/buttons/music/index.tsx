@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 import ReactPlayer from "react-player";
-import { config } from "../../../../config/index";
+import { config } from "@/config/index";
 
 /**
  * @description Start or pause the music of the page with this button

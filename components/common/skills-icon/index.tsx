@@ -1,6 +1,6 @@
 import React from "react";
 import { Tooltip } from "@material-tailwind/react";
-import { IconsType } from "../../../models";
+import { IconsType } from "@/models";
 
 /**
  * @description Creates a tooltip above the specified component

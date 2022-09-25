@@ -20,7 +20,7 @@ import {
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
 import { ReactElement } from "react";
-import { SkillsIcon } from "../..";
+import { SkillsIcon } from "@/components";
 
 /**
  * @description Skills section

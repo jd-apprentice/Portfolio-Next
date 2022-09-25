@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PostType } from "../../../models";
+import { PostType } from "@/models";
 
 export default function Post({ post }: PostType) {
   return (
