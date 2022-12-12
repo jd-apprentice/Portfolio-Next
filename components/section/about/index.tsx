@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
-import { config } from "../../../config/index";
+import { config } from "@/config/index";
 import Link from "next/link";
 
 /**
@@ -57,7 +57,7 @@ const About: React.FC = (): ReactElement => {
             </button>
           </div>
         </Link>
-        <Link href={"/blog"}>
+        {/* <Link href={"/blog"}>
           <div className="flex items-center justify-center md:justify-center lg:justify-start xsm:justify-center sm:justify-center space-x-2 mt-2">
             <button
               type="button"
@@ -66,7 +66,7 @@ const About: React.FC = (): ReactElement => {
               {t("button_blog")}
             </button>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

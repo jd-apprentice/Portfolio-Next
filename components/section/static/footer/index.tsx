@@ -1,6 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 import React, { ReactElement } from "react";
-import { config } from "../../../../config/index";
+import { config } from "@/config/index";
 
 /**
  * @description Footer contains links to socials and important stuff

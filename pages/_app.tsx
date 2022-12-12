@@ -1,6 +1,6 @@
 import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
-import { Footer, Navigation } from "../components";
+import { Footer, Navigation } from "@/components";
 import { ThemeProvider } from "next-themes";
 import { ThemeProvider as TaildwindTheme } from "@material-tailwind/react";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS

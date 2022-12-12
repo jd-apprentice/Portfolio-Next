@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { BoxType } from "../../../models";
+import { BoxType } from "@/models";
 
 /**
  * ```jsx

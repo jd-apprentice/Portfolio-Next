@@ -3,9 +3,9 @@ import path from "path";
 import matter from "gray-matter";
 import marked from "marked";
 import Link from "next/link";
-import { IPost } from "../../models";
+import { IPost } from "@/models";
 import Head from "next/head";
-import { config } from "../../config";
+import { config } from "@/config";
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function PostPage({
