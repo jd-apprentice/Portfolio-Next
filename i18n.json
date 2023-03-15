@@ -5,6 +5,6 @@
       "*": ["_app"],
       "/": ["_app", "index"],
       "/skills": ["index"],
-      "/blog": ["index"]
+      "/projects": ["index"]
     }
 }

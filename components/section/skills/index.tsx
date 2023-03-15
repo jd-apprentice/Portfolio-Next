@@ -4,13 +4,11 @@ import Box from "../../common/box";
 import {
   SiTypescript,
   SiReact,
-  SiNextdotjs,
   SiNodedotjs,
   SiExpress,
   SiMongodb,
   SiPostgresql,
   SiDocker,
-  SiHeroku,
   SiVercel,
   SiVim,
   SiLinux,
@@ -21,6 +19,7 @@ import {
   SiChakraui,
   SiFirebase,
   SiNginx,
+  SiRust,
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
 import { ReactElement } from "react";
@@ -53,6 +52,7 @@ const Skills: React.FC = (): ReactElement => {
           title={t("languages")}
           icons={[
             <SkillsIcon text="Typescript" children={<SiTypescript />} />,
+            <SkillsIcon text="Rust" children={<SiRust />} />,
             <SkillsIcon text="Bash" children={<SiGnubash />} />,
           ]}
         />
@@ -85,7 +85,7 @@ const Skills: React.FC = (): ReactElement => {
             <SkillsIcon text="Docker" children={<SiDocker />} />,
             <SkillsIcon text="Vim" children={<SiVim />} />,
             <SkillsIcon text="Linux" children={<SiLinux />} />,
-            <SkillsIcon text="nginx" children={<SiNginx />} />,
+            <SkillsIcon text="Nginx" children={<SiNginx />} />,
           ]}
         />
         <Box

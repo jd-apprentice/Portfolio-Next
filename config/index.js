@@ -1,6 +1,6 @@
 export var config = {
   youtube: {
-    url: "https://youtu.be/pgi9vv46zAI",
+    url: "https://youtu.be/yel0LJXnqGk",
   },
   github: {
     url: "https://avatars.githubusercontent.com/u/68082746?v=4",
