@@ -29,5 +29,5 @@ jobs:
           script: |
             cd /${{ secrets.USER }}/projects/Portfolio-Next
             git pull origin main
-            npm run build
-            pm2 restart portfolio
+            /root/.nvm/versions/node/v16.17.0/bin/npm run build
+            /root/.nvm/versions/node/v16.17.0/bin/pm2 restart portfolio
