@@ -12,9 +12,6 @@ jobs:
       - name: Update packages
         run: sudo apt-get update && sudo apt-get install -y curl
 
-      - name: Create NVM directory
-        run: mkdir $HOME/.nvm
-
       - name: Set NVM_DIR environment variable
         run: echo 'export NVM_DIR="$HOME/.nvm"' >> $HOME/.bashrc
 
