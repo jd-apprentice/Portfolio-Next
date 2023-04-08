@@ -21,25 +21,21 @@ jobs:
       - name: Install nvm
         run: |
           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-        creates: "$HOME/.nvm/nvm.sh"
 
       - name: Install node
         run: |
           source $HOME/.nvm/nvm.sh
           nvm install 16.6.2
-        creates: "$HOME/.nvm/versions/node/v16.6.2/bin/node"
 
       - name: Install yarn
         run: |
           source $HOME/.nvm/nvm.sh
           npm install -g yarn
-        creates: "$HOME/.nvm/versions/node/v16.6.2/bin/yarn"
 
       - name: Install pm2
         run: |
           source $HOME/.nvm/nvm.sh
           npm install -g pm2
-        creates: "$HOME/.nvm/versions/node/v16.6.2/bin/pm2"
 
       - name: Checkout code
         uses: actions/checkout@v2
