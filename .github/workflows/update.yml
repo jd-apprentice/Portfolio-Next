@@ -9,35 +9,50 @@ jobs:
   update-and-restart:
     runs-on: "ubuntu-latest"
     steps:
-      - name: Update packages
-        run: sudo apt-get update && sudo apt-get install -y curl
-
-      - name: Install nvm
-        run: |
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-
-      - name: Install node
-        run: |
-          export PATH="$PATH:~/.nvm/versions/node/v16.6.2/bin"
-          source ~/.nvm/nvm.sh
-          nvm install 16.6.2
-
-      - name: Install yarn
-        run: |
-          export PATH="$PATH:~/.nvm/versions/node/v16.6.2/bin"
-          source ~/.nvm/nvm.sh
-          npm install -g yarn
-
-      - name: Install pm2
-        run: |
-          export PATH="$PATH:~/.nvm/versions/node/v16.6.2/bin"
-          source ~/.nvm/nvm.sh
-          npm install -g pm2
-
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
+      - name: SSH into server and update packages
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            sudo apt-get update && sudo apt-get install -y curl
+
+      - name: SSH into server and install nvm
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+      - name: SSH into server and install node
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+            nvm install 16.6.2
+
+      - name: SSH into server and install pm2 and yarn
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+            npm install -g yarn pm2
 
       - name: SSH into server and pull
         uses: appleboy/ssh-action@master
