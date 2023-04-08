@@ -10,23 +10,10 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: Update packages
-        run: sudo apt-get update && sudo apt-get install -y curl
-
-      - name: Install nvm
-        run: |
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-
-      - name: Install node
-        run: |
-          export PATH="$PATH:~/.nvm/versions/node/v16.6.2/bin"
-          source ~/.nvm/nvm.sh
-          nvm install 16.6.2
+        run: sudo apt-get update && sudo apt-get install -y npm
 
       - name: Install pm2
-        run: |
-          export PATH="$PATH:~/.nvm/versions/node/v16.6.2/bin"
-          source ~/.nvm/nvm.sh
-          npm install -g pm2
+        run: sudo npm install -g pm2
 
       - name: Checkout code
         uses: actions/checkout@v2
