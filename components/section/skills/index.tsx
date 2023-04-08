@@ -17,9 +17,11 @@ import {
   SiMaterialui,
   SiNestjs,
   SiChakraui,
-  SiFirebase,
   SiNginx,
-  SiRust,
+  SiPython,
+  SiAutohotkey,
+  SiGithubactions,
+  SiAmazonaws,
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
 import { ReactElement } from "react";
@@ -47,12 +49,12 @@ const Skills: React.FC = (): ReactElement => {
         </div>
       </div>
       <h2 className="ml-5 text-2xl">{t("skills")}</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-3">
         <Box
           title={t("languages")}
           icons={[
             <SkillsIcon text="Typescript" children={<SiTypescript />} />,
-            <SkillsIcon text="Rust" children={<SiRust />} />,
+            <SkillsIcon text="Python" children={<SiPython />} />,
             <SkillsIcon text="Bash" children={<SiGnubash />} />,
           ]}
         />
@@ -92,8 +94,15 @@ const Skills: React.FC = (): ReactElement => {
           title={t("cloud")}
           icons={[
             <SkillsIcon text="Digital Ocean" children={<SiDigitalocean />} />,
-            <SkillsIcon text="Firebase" children={<SiFirebase />} />,
             <SkillsIcon text="Vercel" children={<SiVercel />} />,
+            <SkillsIcon text="AWS" children={<SiAmazonaws />} />,
+          ]}
+        />
+        <Box
+          title={t("automation")}
+          icons={[
+            <SkillsIcon text="Autohotkey" children={<SiAutohotkey />} />,
+            <SkillsIcon text="Github Actions" children={<SiGithubactions />} />,
           ]}
         />
       </div>
