@@ -13,26 +13,26 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y curl
 
       - name: Install nvm
-        run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-        creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+        run: |
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        env:
+          NVM_DIR: $HOME/.nvm
+          NVM_SYMLINK_CURRENT: true
 
       - name: Install node
         run: |
-          source ~/.nvm/nvm.sh
+          source $HOME/.nvm/nvm.sh
           nvm install 16.6.2
-        creates: "{{ ansible_env.HOME }}/.nvm/versions/node/v16.6.2/bin/node"
 
       - name: Install yarn
         run: |
-          source ~/.nvm/nvm.sh
+          source $HOME/.nvm/nvm.sh
           npm install -g yarn
-        creates: "{{ ansible_env.HOME }}/.nvm/versions/node/v16.6.2/bin/yarn"
 
       - name: Install pm2
         run: |
-          source ~/.nvm/nvm.sh
+          source $HOME/.nvm/nvm.sh
           npm install -g pm2
-        creates: "{{ ansible_env.HOME }}/.nvm/versions/node/v16.6.2/bin/pm2"
 
       - name: Checkout code
         uses: actions/checkout@v2
