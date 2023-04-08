@@ -10,29 +10,35 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: Update packages
-        run: sudo apt-get update && sudo apt-get install -y
+        run: sudo apt-get update && sudo apt-get install -y curl
 
       - name: Install nvm
-        ansible.builtin.shell: >
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        shell:
+          cmd: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
         args:
           creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
 
       - name: Install node
-        ansible.builtin.shell: >
-          source ~/.nvm/nvm.sh && nvm install 16.6.2
+        shell:
+          cmd: |
+            source ~/.nvm/nvm.sh
+            nvm install 16.6.2
         args:
           creates: "{{ ansible_env.HOME }}/.nvm/versions/node/v16.6.2/bin/node"
 
       - name: Install yarn
-        ansible.builtin.shell: >
-          source ~/.nvm/nvm.sh && npm install -g yarn
+        shell:
+          cmd: |
+            source ~/.nvm/nvm.sh
+            npm install -g yarn
         args:
           creates: "{{ ansible_env.HOME }}/.nvm/versions/node/v16.6.2/bin/yarn"
 
       - name: Install pm2
-        ansible.builtin.shell: >
-          source ~/.nvm/nvm.sh && npm install -g pm2
+        shell:
+          cmd: |
+            source ~/.nvm/nvm.sh
+            npm install -g pm2
         args:
           creates: "{{ ansible_env.HOME }}/.nvm/versions/node/v16.6.2/bin/pm2"
 
