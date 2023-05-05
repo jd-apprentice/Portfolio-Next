@@ -22,6 +22,11 @@ import {
   SiAutohotkey,
   SiGithubactions,
   SiAmazonaws,
+  SiMysql,
+  SiNextdotjs,
+  SiJest,
+  SiDebian,
+  SiAnsible,
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
 import { ReactElement } from "react";
@@ -61,15 +66,15 @@ const Skills: React.FC = (): ReactElement => {
         <Box
           title="Frontend"
           icons={[
+            <SkillsIcon text="Nextjs" children={<SiNextdotjs />} />,
+            <SkillsIcon text="Chakra UI" children={<SiChakraui />} />,
             <SkillsIcon text="React" children={<SiReact />} />,
             <SkillsIcon text="Material UI" children={<SiMaterialui />} />,
-            <SkillsIcon text="Chakra UI" children={<SiChakraui />} />,
           ]}
         />
         <Box
           title="Backend"
           icons={[
-            <SkillsIcon text="Nodejs" children={<SiNodedotjs />} />,
             <SkillsIcon text="Express" children={<SiExpress />} />,
             <SkillsIcon text="Nestjs" children={<SiNestjs />} />,
           ]}
@@ -78,7 +83,7 @@ const Skills: React.FC = (): ReactElement => {
           title="DBs"
           icons={[
             <SkillsIcon text="MongoDB" children={<SiMongodb />} />,
-            <SkillsIcon text="PostgreSQL" children={<SiPostgresql />} />,
+            <SkillsIcon text="MySQL" children={<SiMysql />} />,
           ]}
         />
         <Box
@@ -104,6 +109,10 @@ const Skills: React.FC = (): ReactElement => {
             <SkillsIcon text="Autohotkey" children={<SiAutohotkey />} />,
             <SkillsIcon text="Github Actions" children={<SiGithubactions />} />,
           ]}
+        />
+        <Box
+          title={t("testing")}
+          icons={[<SkillsIcon text="Jest" children={<SiJest />} />]}
         />
       </div>
     </>
