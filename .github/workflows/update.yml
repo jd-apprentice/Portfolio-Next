@@ -29,6 +29,6 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
             nvm install --lts
             nvm use --lts
-            sudo npm install -g pm2
+            npm install -g pm2
             npm run build
             pm2 restart portfolio
