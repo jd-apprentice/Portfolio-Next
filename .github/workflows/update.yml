@@ -11,7 +11,9 @@ jobs:
     steps:
       - name: Install curl
         run: sudo apt-get install curl -y
+
       - name: Install nvm and latest LTS version of Node.js and npm
+        id: nvm
         run: |
           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
           export NVM_DIR="$HOME/.nvm"
@@ -19,11 +21,13 @@ jobs:
           nvm install --lts
           nvm use --lts
 
-          # Check versions
+      - name: Check versions
+        run: |
           node -v
           npm -v
 
       - name: Install pm2
+        id: pm2
         run: sudo npm install -g pm2
 
       - name: Checkout code
@@ -32,6 +36,7 @@ jobs:
           fetch-depth: 0
 
       - name: SSH into server and pull
+        needs: [nvm, pm2]
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
