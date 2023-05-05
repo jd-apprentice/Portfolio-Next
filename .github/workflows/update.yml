@@ -8,6 +8,7 @@ on:
 jobs:
   update-and-restart:
     runs-on: ubuntu-22.04
+    needs: [nvm, pm2]
     steps:
       - name: Install curl
         run: sudo apt-get install curl -y
@@ -36,7 +37,6 @@ jobs:
           fetch-depth: 0
 
       - name: SSH into server and pull
-        needs: [nvm, pm2]
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
