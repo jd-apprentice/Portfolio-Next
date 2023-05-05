@@ -8,13 +8,12 @@ on:
 jobs:
   update-and-restart:
     runs-on: ubuntu-22.04
-    needs: [nvm, pm2]
     steps:
       - name: Install curl
-        run: sudo apt-get install curl -y
+        run: |
+          sudo apt-get install curl -y
 
       - name: Install nvm and latest LTS version of Node.js and npm
-        id: nvm
         run: |
           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
           export NVM_DIR="$HOME/.nvm"
@@ -28,8 +27,8 @@ jobs:
           npm -v
 
       - name: Install pm2
-        id: pm2
-        run: sudo npm install -g pm2
+        run: |
+          sudo npm install -g pm2
 
       - name: Checkout code
         uses: actions/checkout@v2
