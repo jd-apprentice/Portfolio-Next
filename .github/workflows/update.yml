@@ -9,8 +9,10 @@ jobs:
   update-and-restart:
     runs-on: ubuntu-22.04
     steps:
-      - name: Update packages
-        run: sudo apt-get update && sudo apt-get install -y npm=^7.0.0
+      - name: Update packages and install latest npm
+        run: |
+          sudo apt-get update && sudo apt-get install -y npm
+          sudo npm install -g npm@latest-7
 
       - name: Install pm2
         run: sudo npm install -g pm2
