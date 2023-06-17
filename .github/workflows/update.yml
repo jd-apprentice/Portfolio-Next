@@ -31,5 +31,7 @@ jobs:
             nvm use --lts
             npm install -g pm2
             pm2 stop all
+            docker stop $(docker ps -aq)
             npm run build
+            docker start $(docker ps -aq)
             pm2 restart all
