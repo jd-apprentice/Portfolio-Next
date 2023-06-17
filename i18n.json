@@ -1,10 +1,25 @@
 {
-    "locales": ["en", "es"],
-    "defaultLocale": "en",
-    "pages": {
-      "*": ["_app"],
-      "/": ["_app", "index"],
-      "/skills": ["index"],
-      "/projects": ["index"]
-    }
+  "locales": [
+    "en",
+    "es"
+  ],
+  "defaultLocale": "en",
+  "pages": {
+    "*": [
+      "_app"
+    ],
+    "/": [
+      "_app",
+      "index"
+    ],
+    "/skills": [
+      "index"
+    ],
+    "/projects": [
+      "index"
+    ],
+    "/blogs": [
+      "index"
+    ]
+  }
 }
