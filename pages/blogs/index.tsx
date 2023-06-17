@@ -11,7 +11,7 @@ interface Props {
                         slug: string;
                         coverImage: string;
                         dateAdded: string;
-                    };
+                    }[]
                 };
             }
         }
