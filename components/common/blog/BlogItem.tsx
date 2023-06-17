@@ -1,6 +1,16 @@
 import React from "react";
 
-export default function BlogItem({ post }) {
+interface Props {
+    post: {
+        title: string;
+        brief: string;
+        slug: string;
+        coverImage: string;
+        dateAdded: string;
+    };
+}
+
+export default function BlogItem({ post }: Props) {
     const redirectToHashnode = () => {
         window.open("https://blog.jonathan.com.ar/" + post.slug, "_blank");
     };
