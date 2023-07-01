@@ -8,7 +8,7 @@ const Home: NextPage = (): ReactElement => {
   return (
     <div className="space-y-14 lg:space-y-24">
       <Head>
-        <title>Jonathan Dyallo - Fullstack Developer</title>
+        <title>Jonathan Dyallo - SRE - Devops</title>
         <link
           rel="shortcut icon"
           type="image/png"
@@ -17,15 +17,15 @@ const Home: NextPage = (): ReactElement => {
         <meta property="og:image" content={config.github.url} />
         <meta
           name="description"
-          content="I'm a fullstack web developer. Also a person with a lot of desire to progress and develop the skills that the labor market requires."
+          content="I'm a sre - devops. Also a person with a lot of desire to progress and develop the skills that the labor market requires."
         ></meta>
         <meta
           property="og:description"
-          content="I'm a fullstack web developer. Also a person with a lot of desire to progress and develop the skills that the labor market requires."
+          content="I'm a sre - devops. Also a person with a lot of desire to progress and develop the skills that the labor market requires."
         />
         <meta
           property="og:title"
-          content="Jonathan Dyallo - Fullstack Developer"
+          content="Jonathan Dyallo - SRE - Devops"
         />
         <meta property="og:url" content="https://jonathandyallo.vercel.app" />
       </Head>

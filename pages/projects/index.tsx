@@ -26,7 +26,7 @@ const ProjectsSection: NextPage = (): ReactElement => {
 
         <meta
           property="og:title"
-          content="Jonathan Dyallo - Fullstack Developer"
+          content="Jonathan Dyallo - SRE - Devops"
         />
         <meta property="og:url" content="https://jonathandyallo.vercel.app" />
       </Head>

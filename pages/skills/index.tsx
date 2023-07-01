@@ -15,8 +15,8 @@ const SkillsSection: NextPage = (): ReactElement => {
         <meta name="description"
           content="Skills section - Here I list most of the skills I use in my daily basis and my personal projects"></meta>
         <meta property="og:description"
-          content="Skills section - Here I list most of the skills I use in my daily basis and my personal projects"/>
-        <meta property="og:title" content="Jonathan Dyallo - Fullstack Developer" />
+          content="Skills section - Here I list most of the skills I use in my daily basis and my personal projects" />
+        <meta property="og:title" content="Jonathan Dyallo -  SRE - Devops" />
         <meta property="og:url" content="https://jonathandyallo.vercel.app" />
       </Head>
       <main className="max-w-4xl mx-auto mt-16 antialiased">

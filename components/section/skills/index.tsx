@@ -4,29 +4,25 @@ import Box from "../../common/box";
 import {
   SiTypescript,
   SiReact,
-  SiNodedotjs,
   SiExpress,
   SiMongodb,
-  SiPostgresql,
   SiDocker,
   SiVercel,
   SiVim,
   SiLinux,
   SiDigitalocean,
   SiGnubash,
-  SiMaterialui,
   SiNestjs,
-  SiChakraui,
   SiNginx,
   SiPython,
   SiAutohotkey,
   SiGithubactions,
   SiAmazonaws,
-  SiMysql,
   SiNextdotjs,
   SiJest,
-  SiDebian,
   SiAnsible,
+  SiFastapi,
+  SiPlanet,
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
 import { ReactElement } from "react";
@@ -67,9 +63,7 @@ const Skills: React.FC = (): ReactElement => {
           title="Frontend"
           icons={[
             <SkillsIcon text="Nextjs" children={<SiNextdotjs />} />,
-            <SkillsIcon text="Chakra UI" children={<SiChakraui />} />,
             <SkillsIcon text="React" children={<SiReact />} />,
-            <SkillsIcon text="Material UI" children={<SiMaterialui />} />,
           ]}
         />
         <Box
@@ -77,13 +71,14 @@ const Skills: React.FC = (): ReactElement => {
           icons={[
             <SkillsIcon text="Express" children={<SiExpress />} />,
             <SkillsIcon text="Nestjs" children={<SiNestjs />} />,
+            <SkillsIcon text="FastApi" children={<SiFastapi />} />,
           ]}
         />
         <Box
           title="DBs"
           icons={[
             <SkillsIcon text="MongoDB" children={<SiMongodb />} />,
-            <SkillsIcon text="MySQL" children={<SiMysql />} />,
+            <SkillsIcon text="Planetscale" children={<SiPlanet />} />,
           ]}
         />
         <Box
@@ -108,6 +103,7 @@ const Skills: React.FC = (): ReactElement => {
           icons={[
             <SkillsIcon text="Autohotkey" children={<SiAutohotkey />} />,
             <SkillsIcon text="Github Actions" children={<SiGithubactions />} />,
+            <SkillsIcon text="Ansible" children={<SiAnsible />} />,
           ]}
         />
         <Box
