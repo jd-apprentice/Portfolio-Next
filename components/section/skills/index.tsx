@@ -23,6 +23,11 @@ import {
   SiAnsible,
   SiFastapi,
   SiPlanet,
+  SiTerraform,
+  SiMicrosoftazure,
+  SiDebian,
+  SiArchlinux,
+  SiProxmox,
 } from "react-icons/si";
 import useTranslation from "next-translate/useTranslation";
 import { ReactElement } from "react";
@@ -86,7 +91,7 @@ const Skills: React.FC = (): ReactElement => {
           icons={[
             <SkillsIcon text="Docker" children={<SiDocker />} />,
             <SkillsIcon text="Vim" children={<SiVim />} />,
-            <SkillsIcon text="Linux" children={<SiLinux />} />,
+
             <SkillsIcon text="Nginx" children={<SiNginx />} />,
           ]}
         />
@@ -94,21 +99,29 @@ const Skills: React.FC = (): ReactElement => {
           title={t("cloud")}
           icons={[
             <SkillsIcon text="Digital Ocean" children={<SiDigitalocean />} />,
-            <SkillsIcon text="Vercel" children={<SiVercel />} />,
             <SkillsIcon text="AWS" children={<SiAmazonaws />} />,
+            <SkillsIcon text="Azure" children={<SiMicrosoftazure />} />,
           ]}
         />
         <Box
           title={t("automation")}
           icons={[
-            <SkillsIcon text="Autohotkey" children={<SiAutohotkey />} />,
             <SkillsIcon text="Github Actions" children={<SiGithubactions />} />,
             <SkillsIcon text="Ansible" children={<SiAnsible />} />,
+            <SkillsIcon text="Terraform" children={<SiTerraform />} />,
           ]}
         />
         <Box
           title={t("testing")}
           icons={[<SkillsIcon text="Jest" children={<SiJest />} />]}
+        />
+        <Box
+          title="OS"
+          icons={[
+            <SkillsIcon text="Debian" children={<SiDebian />} />,
+            <SkillsIcon text="Arch" children={<SiArchlinux />} />,
+            <SkillsIcon text="Proxmox" children={<SiProxmox />} />,
+          ]}
         />
       </div>
     </>
