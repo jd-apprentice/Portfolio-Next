@@ -3,7 +3,7 @@ name: Update and Restart App on DigitalOcean Droplet
 on:
   push:
     branches:
-      - main
+      - digital_ocean
 
 jobs:
   update-and-restart:
